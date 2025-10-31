@@ -1,0 +1,152 @@
+/**
+ * ROFI Color theme
+ * User: mbfraga
+ * Copyright: Martin B. Fraga
+ */
+
+/* global settings and color variables */
+* {
+   maincolor:        rgba(41, 128, 185, 0.7);
+   highlight:        bold rgba(41, 128, 185, 0.7);
+   urgentcolor:      #e53714;
+
+   fgwhite:          rgba(255, 255, 255, 0.7);
+   blackdarkest:     transparent; /* inner window color change*/
+   blackwidget:      rgba(10, 10, 10, 0.7);
+   blackentry:       transparent;
+   blackselect:      rgba(65, 246, 185, 0.7);
+   darkgray:         rgba(255, 255, 255, 0.7);
+   scrollbarcolor:   rgba(80, 80, 80, 0.7);
+   font: "Inter Variable 14";
+   background-color: transparent;
+}
+/* rgba(255, 0, 0, 0.7);  */
+window {
+   background-color: rgba(29, 38, 47, 0.7); /* whole window color change */
+   anchor: north;
+   location: north;
+   y-offset: 25%;
+   border-radius: 0px;
+   border-color: #41F6B9;
+   border: 2px;
+}
+
+mainbox {
+   background-color: transparent; /* inner window color change 2 */
+   spacing:0px;
+   children: [inputbar, message, mode-switcher, listview];
+}
+
+message {
+   padding: 6px 10px;
+   background-color:@blackwidget;
+}
+
+textbox {
+   text-color:@darkgray;
+   background-color:@blackwidget;
+}
+
+listview {
+   fixed-height: false;
+   dynamic: true;
+   scrollbar: true;
+   spacing: 0px;
+   padding: 1px 0px 0px 0px;
+   margin: 0px 0px 1px 0px;
+   background: transparent;
+}
+
+element {
+   padding: 2px 15px;
+}
+
+element normal.normal {
+   padding: 0px 15px;
+   background-color: transparent;
+   text-color: rgba(65, 246, 185, 0.7);
+}
+
+element normal.urgent {
+   background-color: @blackentry;
+   text-color: @urgentcolor;
+}
+
+element normal.active {
+   background-color: @blackentry;
+   text-color: rgba(41, 128, 185, 0.7);
+}
+
+element selected.normal {
+    background-color: rgba(3, 76, 81, 0.7);
+    text-color:       rgba(41, 128, 185, 0.7);
+}
+
+element selected.urgent {
+    background-color: @urgentcolor;
+    text-color:       rgba(0, 0, 0, 0.7);
+}
+
+element selected.active {
+    background-color: rgba(65, 246, 185, 0.7);
+    text-color:       rgba(3, 76, 81, 0.7);
+}
+
+element alternate.normal {
+    background-color: transparent;
+    text-color:       rgba(65, 246, 185, 0.7);
+}
+
+element alternate.urgent {
+    background-color: @blackentry;
+    text-color:       @urgentcolor;
+}
+
+element alternate.active {
+    background-color: @blackentry;
+    text-color:       @maincolor;
+}
+
+scrollbar {
+   background-color: transparent;
+   handle-color: transparent;
+   handle-width: 0px; /* if value > 0 will appear scrollbar */
+}
+
+mode-switcher {
+   background-color: transparent;
+}
+
+button {
+   background-color: transparent;
+   text-color:       rgba(65, 246, 185, 0.7);
+}
+
+button selected {
+    text-color:       rgba(41, 128, 185, 0.7);
+    background-color: rgba(3, 76, 81, 0.7);
+}
+
+inputbar {
+   background-color: transparent;
+   spacing: 0px;
+}
+
+prompt {
+   padding:6px 9px;
+   background-color: rgba(3, 76, 81, 0.7);
+   text-color:rgba(41, 128, 185, 0.7);
+}
+
+entry {
+   placeholder: "";
+   padding:6px 10px;
+   background-color:transparent;
+   text-color:rgba(65, 246, 185, 0.7);
+}
+
+case-indicator {
+   padding:6px 10px;
+   text-color:@maincolor;
+   background-color: transparent; /* if case-indicator doesnt show set a color */
+}
