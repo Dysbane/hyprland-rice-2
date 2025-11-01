@@ -74,8 +74,8 @@ button:hover {
 
 #pulseaudio:hover {
     background-color: transparent;
-    color: #2980b9;
-    box-shadow: inset 0 -2px #2980b9;
+    color: #35BBB9;
+    /* box-shadow: inset 0 -2px #2980b9; */
     margin: 2px 0px;
 }
 
@@ -98,15 +98,16 @@ button:hover {
     padding: 0px 10px;
     background-color: transparent;
     color: #41F6B9;
-    box-shadow: inset 0 -2px #41F6B9;
+    /* box-shadow: inset 0 -2px #41F6B9; */
 }
 
 
 #workspaces button:hover {
     padding: 0px 10px;
     background-color: transparent;
-    color: #034C51;
-    box-shadow: inset 0 -2px #034C51;
+    color: #35BBB9;
+    /* box-shadow: inset 0 -2px #034C51; */
+    box-shadow: none;
 }
 
 #workspaces button.focused {
