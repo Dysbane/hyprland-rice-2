@@ -26,7 +26,7 @@ window {
    anchor: north;
    location: north;
    y-offset: 25%;
-   border-radius: 0px;
+   border-radius: 15px;
    border-color: #41F6B9;
    border: 2px;
 }

@@ -160,7 +160,7 @@
         "tooltip-format": " {used:0.1f}G / {total:0.1f}G"
     },
     "disk": {
-        "format": "/   {}%  /"
+        "format": "/   {}%  /"
     },
     "temperature": {
         // "thermal-zone": 2,
