@@ -9,7 +9,7 @@
 window#waybar {
     /* background-color: rgba(29, 38, 47, 0.3); */
     /*  border-block-start-color: 2px solid #2980B9; */
-    background: linear-gradient(90deg, rgba(65, 246, 185, 0.15) 0%, rgba(41, 128, 185, 0.15) 100%);
+    background: linear-gradient(90deg, rgba(65, 246, 185, 0.2) 0%, rgba(41, 128, 185, 0.2) 100%);
     color: #2980B9;
     transition-property: background-color;
     transition-duration: .5s;
@@ -39,11 +39,11 @@ window#waybar.hidden {
 
 window#waybar.empty {
     /* background-color: rgba(29, 38, 47, 0.3); */
-    background: linear-gradient(90deg, rgba(65, 246, 185, 0.15) 0%, rgba(41, 128, 185, 0.15) 100%);
+    background: linear-gradient(90deg, rgba(65, 246, 185, 0.2) 0%, rgba(41, 128, 185, 0.2) 100%);
 }
 window#waybar.solo {
     /* background-color: rgba(29, 38, 47, 0.3); */
-    background: linear-gradient(90deg, rgba(65, 246, 185, 0.15) 0%, rgba(41, 128, 185, 0.15) 100%);
+    background: linear-gradient(90deg, rgba(65, 246, 185, 0.2) 0%, rgba(41, 128, 185, 0.2) 100%);
 }
 
 
@@ -290,9 +290,9 @@ label:focus {
     color: #41F6B9;
 }
 
-#temperature.critical {
-    background-color: #ff0000;
-}
+/* #temperature.critical {
+
+} */
 
 #tray {
     background-color: #2980b9;

@@ -6,21 +6,21 @@
 
 /* global settings and color variables */
 * {
-   maincolor:        rgba(41, 128, 185, 0.7);
-   highlight:        bold rgba(41, 128, 185, 0.7);
+   maincolor:        rgba(41, 128, 185, 1);
+   highlight:        bold rgba(41, 128, 185, 1);
    urgentcolor:      #e53714;
 
-   fgwhite:          rgba(255, 255, 255, 0.7);
+   fgwhite:          rgba(255, 255, 255, 1);
    blackdarkest:     transparent; /* inner window color change*/
-   blackwidget:      rgba(10, 10, 10, 0.7);
+   blackwidget:      rgba(10, 10, 10, 1);
    blackentry:       transparent;
-   blackselect:      rgba(65, 246, 185, 0.7);
-   darkgray:         rgba(255, 255, 255, 0.7);
-   scrollbarcolor:   rgba(80, 80, 80, 0.7);
+   blackselect:      rgba(65, 246, 185, 1);
+   darkgray:         rgba(255, 255, 255, 1);
+   scrollbarcolor:   rgba(80, 80, 80, 1);
    font: "Inter Variable 14";
    background-color: transparent;
 }
-/* rgba(255, 0, 0, 0.7);  */
+/* rgba(255, 0, 0, 1);  */
 window {
    background-color: transparent; /* whole window color change */
    anchor: north;
@@ -65,7 +65,7 @@ element {
 element normal.normal {
    padding: 0px 15px;
    background-color: transparent;
-   text-color: rgba(65, 246, 185, 0.7);
+   text-color: rgba(65, 246, 185, 1);
 }
 
 element normal.urgent {
@@ -75,27 +75,29 @@ element normal.urgent {
 
 element normal.active {
    background-color: @blackentry;
-   text-color: rgba(41, 128, 185, 0.7);
+   text-color: rgba(41, 128, 185, 1);
 }
 
 element selected.normal {
     background-color: rgba(3, 76, 81, 0.7);
-    text-color:       rgba(41, 128, 185, 0.7);
+    text-color:       rgba(53, 187, 185, 1);
+    border-radius: 15px;
 }
 
 element selected.urgent {
     background-color: @urgentcolor;
-    text-color:       rgba(0, 0, 0, 0.7);
+    text-color:       rgba(0, 0, 0, 1);
 }
 
 element selected.active {
     background-color: rgba(65, 246, 185, 0.7);
-    text-color:       rgba(3, 76, 81, 0.7);
+    text-color:       rgba(3, 76, 81, 1);
+    border-radius: 15px;
 }
 
 element alternate.normal {
     background-color: transparent;
-    text-color:       rgba(65, 246, 185, 0.7);
+    text-color:       rgba(65, 246, 185, 1);
 }
 
 element alternate.urgent {
@@ -115,17 +117,19 @@ scrollbar {
 }
 
 mode-switcher {
-   background-color: transparent;
+   background-color: rgba(3, 76, 81, 0.7);
+   border-radius: 15px;
 }
 
 button {
    background-color: transparent;
-   text-color:       rgba(65, 246, 185, 0.7);
+   text-color:       rgba(53, 187, 185, 1);
 }
 
 button selected {
-    text-color:       rgba(41, 128, 185, 0.7);
+    text-color:       rgba(65, 246, 185, 1);
     background-color: transparent;
+    border-radius: 15px;
 }
 
 inputbar {
@@ -136,14 +140,14 @@ inputbar {
 prompt {
    padding:6px 9px;
    background-color: transparent;
-   text-color:rgba(41, 128, 185, 0.7);
+   text-color:rgba(41, 128, 185, 1);
 }
 
 entry {
    placeholder: "";
    padding:6px 10px;
    background-color:transparent;
-   text-color:rgba(65, 246, 185, 0.7);
+   text-color:rgba(65, 246, 185, 1);
 }
 
 case-indicator {
