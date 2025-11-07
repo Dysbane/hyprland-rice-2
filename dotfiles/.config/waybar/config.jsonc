@@ -22,7 +22,8 @@
         "disk",
         "temperature",
         "pulseaudio",
-        "network"
+        "network",
+        "custom/power"
     ],
     // Modules configuration
     // "sway/workspaces": {
@@ -208,11 +209,11 @@
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "/   {signalStrength}%  / ",
-        "format-ethernet": "/   {ipaddr}/{cidr}  / ",
+        "format-wifi": "/   {signalStrength}%  /",
+        "format-ethernet": "/   {ipaddr}/{cidr}  /",
         "tooltip-format": " {ifname} via {gwaddr} ({essid})",
-        "format-linked": "/   {ifname} (No IP)  / ",
-        "format-disconnected": "/  ⚠ Disconnected  / "
+        "format-linked": "/   {ifname} (No IP)  /",
+        "format-disconnected": "/  ⚠ Disconnected  /"
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
@@ -244,7 +245,7 @@
         "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
         // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
     },
-    "custom/power": {
+    /* "custom/power": {
         "format" : "⏻ ",
 		"tooltip": false,
 		"menu": "on-click",
@@ -255,5 +256,12 @@
 			"suspend": "systemctl suspend",
 			"hibernate": "systemctl hibernate"
 		}
+    }, */
+
+    "custom/power": {
+        "format": "/    / ",
+        "tooltip": false,
+        "on-click": "wlogout -c 5 -p layer-shell"
     }
+
 }

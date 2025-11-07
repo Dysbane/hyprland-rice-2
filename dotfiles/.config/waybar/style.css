@@ -141,6 +141,8 @@ button:hover {
 #idle_inhibitor,
 #scratchpad,
 #power-profiles-daemon,
+#custom-power,
+
 #mpd {
     padding: 0 10px;
     color: #FFFFFF;
@@ -148,7 +150,7 @@ button:hover {
     border: 0px solid #034C51;
 }
 
-#window{
+#window {
     background-color: transparent;
     color: #2F9EB9;
     margin: 0 0 0 -3px;
@@ -230,12 +232,12 @@ label:focus {
 
 #memory {
     background-color: transparent;
-    color: #3CDCB9;
+    color: #39CFB9;
 }
 
 #disk {
     background-color: transparent;
-    color: #3DE0B9;
+    color: #3AD3B9;
 }
 
 #backlight {
@@ -244,9 +246,7 @@ label:focus {
 
 #network {
     background-color: transparent;
-    color: #41F6B9;
-    /* network is the last widget on the right so it gets the margin */
-    margin-right: 15px;
+    color: #3DE2B9;
 }
 
 #network.disconnected {
@@ -255,12 +255,12 @@ label:focus {
 
 #pulseaudio {
     background-color: transparent;
-    color: #3FECB9;
+    color: #3DE0B9;
 }
 
 #pulseaudio.muted {
     background-color: transparent;
-    color: #3FECB9;
+    color: #3DE0B9;
 }
 
 #wireplumber {
@@ -288,7 +288,7 @@ label:focus {
 
 #temperature {
     background-color: transparent;
-    color: #3EE5B9;
+    color: #3AD4B9;
 }
 
 #temperature.critical {
@@ -386,4 +386,15 @@ label:focus {
 
 #privacy-item.audio-out {
     background-color: #0069d4;
+}
+#custom-power {
+    background-color: transparent;
+    color: #41F6B9;
+    /* custom-power is the last widget on the right so it gets the margin */
+    margin-right: 15px;
+}
+#custom-power:hover {
+    background-color: transparent;
+    color: #35BBB9;
+    /* box-shadow: inset 0 -2px #2980b9; */
 }
