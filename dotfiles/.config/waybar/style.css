@@ -150,6 +150,7 @@ button:hover {
 
 #window{
     background-color: transparent;
+    color: #2F9EB9;
     margin: 0 0 0 -3px;
 }
 #workspaces {
@@ -224,17 +225,17 @@ label:focus {
 
 #cpu {
     background-color: transparent;
-    color: #41F6B9;
+    color: #3DB9B9;
 }
 
 #memory {
     background-color: transparent;
-    color: #41F6B9;
+    color: #3CDCB9;
 }
 
 #disk {
     background-color: transparent;
-    color: #41F6B9;
+    color: #3DE0B9;
 }
 
 #backlight {
@@ -254,12 +255,12 @@ label:focus {
 
 #pulseaudio {
     background-color: transparent;
-    color: #41F6B9;
+    color: #3FECB9;
 }
 
 #pulseaudio.muted {
     background-color: transparent;
-    color: #41F6B9;
+    color: #3FECB9;
 }
 
 #wireplumber {
@@ -287,12 +288,13 @@ label:focus {
 
 #temperature {
     background-color: transparent;
-    color: #41F6B9;
+    color: #3EE5B9;
 }
 
-/* #temperature.critical {
-
-} */
+#temperature.critical {
+    background-color: transparent;
+    color: #2980B9;
+}
 
 #tray {
     background-color: #2980b9;
