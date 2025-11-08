@@ -1,6 +1,6 @@
 {
     "label" : "lock",
-    "action" : "sleep 1s; swaylock --clock --indicator --screenshots --effect-scale 0.4 --effect-vignette 0.2:0.5 --effect-blur 4x2",
+    "action" : "sleep 1s; hyprlock",
     "text" : "Lock",
     "keybind" : "l"
 }
