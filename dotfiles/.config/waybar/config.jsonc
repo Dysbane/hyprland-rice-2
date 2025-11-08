@@ -261,7 +261,7 @@
     "custom/power": {
         "format": "/    / ",
         "tooltip": false,
-        "on-click": "wlogout -c 5 -p layer-shell"
+        "on-click": "wlogout"
     }
 
 }
