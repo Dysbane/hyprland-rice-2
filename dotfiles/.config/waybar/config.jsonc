@@ -92,6 +92,7 @@
     "mpd": {
         "format": "   {title}  ",
         "format-disconnected": "   Disconnected  ",
+        "format-stopped": "   Stopped  ",
         "tooltip-format": "MPD (connected)",
         "tooltip-format-disconnected": "MPD (disconnected)"
     },
