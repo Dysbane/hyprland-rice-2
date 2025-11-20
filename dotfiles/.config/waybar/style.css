@@ -116,8 +116,8 @@ button:hover {
 }
 
 #workspaces button.urgent {
-    background-color: #034C51;
-    color:#2980b9;
+    background-color: transparent;
+    color:#35BBB9;
 }
 
 #mode {
@@ -151,7 +151,7 @@ button:hover {
 
 /* If workspaces is the leftmost module, omit left margin */
 .modules-left > widget:first-child > #workspaces {
-    margin-left: 10px;
+    margin-left: 5px;
 }
 
 /* If workspaces is the rightmost module, omit right margin */

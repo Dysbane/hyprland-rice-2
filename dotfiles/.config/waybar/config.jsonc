@@ -45,7 +45,7 @@
     // },
     "hyprland/workspaces": {
     "disable-scroll": true,
-    "format":"  {icon}  ",
+    "format":"  {icon}  ", // remove "icon" for numbers
 	"format-icons": {
 		"1": "󰈹",
         "2": "",
@@ -165,12 +165,14 @@
     },
     "memory": {
         //"format": "/   {used:0.1f}G / {total:0.1f}G  /", // in numbers
-        "format": "   {}%  ", // in percentage
-        "tooltip-format": " {used:0.1f}G / {total:0.1f}G"
+        "format": "   {percentage}%  ", // in percentage
+        "tooltip-format": " {used:0.1f}GB / {total:0.1f}GB"
     },
     "disk": {
-        "format": "   {}%  "
-    },
+        "format": "   {percentage_used}%  ",
+        "tooltip-format": " {used} / {total}",
+        "unit": "GB"
+    },  
     "temperature": {
         // "thermal-zone": 2,
         // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
